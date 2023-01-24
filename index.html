@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>iBricks</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,80 +11,86 @@
   <link rel="icon" type="image/png" href="favicon32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicon96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="favicon152x152.png" sizes="152x152">
+  <title>iBricks</title>
 </head>
 <style>
 
-body {
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-
-}
-.logo {
-  height: 104px;
-  margin-right: 3em;
-}
-
-.titulo {
-  color: #3C3C3B;
-  font-size: 2.5em;
-  margin-bottom: 2px;
-  margin-top: 0;
-}
-
-.vl {
-  border-left: 1.5px solid #3C3C3B;
-  height: 104px;
-}
-section {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
- p {
-  font-size: 0.875em;
-  color: #3C3C3B;
-  margin: 0;
- }
-.txt {
-  margin-left: 3em;
-}
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 800px) {
+  body {
+      background-color: #ffffff;
+      background-image: url("fondo.jpg");
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
   .box {
-    flex-direction: column;
-    align-items:center;
-    text-align: center;
+    display: flex;
+    align-items: center;
+  
   }
+  .logo {
+    height: 104px;
+    margin-right: 3em;
+  }
+  
+  .titulo {
+    color: #3C3C3B;
+    font-size: 2.5em;
+    margin-bottom: 2px;
+    margin-top: 0;
+  }
+  
   .vl {
-    display: none;
+    border-left: 1.5px solid #3C3C3B;
+    height: 104px;
   }
+  section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   p {
+    font-size: 0.875em;
+    color: #3C3C3B;
+    margin: 0;
+   }
   .txt {
-  margin-left: 0;
-}
-.logo {
-  margin-right: 0;
-  margin-bottom: 1em;
-}
- .titulo {
-  font-size: 2em;
-}
-p {
-  font-size: 0.9375em;
- }
- section {
-  height: 80vh;
-}
-}
-</style>
+    margin-left: 3em;
+  }
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width: 800px) {
+    .box {
+      flex-direction: column;
+      align-items:center;
+      text-align: center;
+    }
+    .vl {
+      display: none;
+    }
+    .txt {
+    margin-left: 0;
+  }
+  .logo {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+   .titulo {
+    font-size: 2em;
+  }
+  p {
+    font-size: 0.9375em;
+   }
+   section {
+    height: 80vh;
+  }
+  }
+  </style>
 <body>
   <section>
     <div class="box">
@@ -94,6 +101,6 @@ p {
         <p>Déjanos guiarte a casa...</p>
       </div>      
     </div>
-  </section>  
+  </section>    
 </body>
 </html>
